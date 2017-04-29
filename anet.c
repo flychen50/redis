@@ -102,6 +102,7 @@ int anetTcpKeepAlive(char *err, int fd)
     return ANET_OK;
 }
 
+//网络使用方法
 int anetResolve(char *err, char *host, char *ipbuf)
 {
     struct sockaddr_in sa;
