@@ -42,7 +42,7 @@
 #include <stdio.h>
 
 #include "anet.h"
-
+//使用需要测试下
 static void anetSetError(char *err, const char *fmt, ...)
 {
     va_list ap;

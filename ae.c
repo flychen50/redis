@@ -72,6 +72,7 @@ int aeCreateFileEvent(aeEventLoop *eventLoop, int fd, int mask,
     fe->fileProc = proc;
     fe->finalizerProc = finalizerProc;
     fe->clientData = clientData;
+    //insert to linklist head
     fe->next = eventLoop->fileEventHead;
     eventLoop->fileEventHead = fe;
     return AE_OK;
