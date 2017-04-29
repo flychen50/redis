@@ -53,6 +53,7 @@ void *zrealloc(void *ptr, size_t size) {
     if (!newptr) return NULL;
 
     *((size_t*)newptr) = size;
+    //not need - sizeof(size_t) again  +sizeof(size_t) 
     used_memory -= oldsize;
     used_memory += size;
     return newptr+sizeof(size_t);
